@@ -1,0 +1,14 @@
+{
+  "name": "@parla/js",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "echo \"build js\"",
+    "lint": "eslint . --ext .js,.ts",
+    "test": "jest --coverage -w=100% --passWithNoTests"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
