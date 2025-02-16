@@ -8,6 +8,7 @@
     "lint": "eslint . --ext .js,.ts",
     "test": "jest --coverage -w=100% --passWithNoTests"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
