@@ -5,14 +5,16 @@
     "packages/*"
   ],
   "devDependencies": {
-    "turbo": "^1.8.0",
     "eslint": "^8.0.0",
     "prettier": "^2.0.0",
-    "typescript": "^4.0.0"
+    "turbo": "^1.8.0"
   },
   "scripts": {
     "build": "turbo run build",
     "lint": "turbo run lint",
+    "prettier": "prettier -c \"packages/**/*.{js,jsx}\"",
+    "prettier:ci": "prettier -c",
+    "prettier:fix": "prettier -w \"packages/**/*.{js,jsx}\"",
     "test": "turbo run test"
   }
 }
