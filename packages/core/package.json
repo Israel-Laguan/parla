@@ -1,14 +1,23 @@
 {
   "name": "@parla/core",
   "version": "0.1.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/script.js",
+  "module": "./dist/module.js",
+  "exports": {
+    "require": "./dist/cjs.js",
+    "import": "./dist/esm.js",
+    "default": "./dist/esm.js"
+  },
   "scripts": {
-    "build": "echo \"build core\"",
-    "lint": "eslint . --ext .js,.ts",
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "lint": "eslint . --ext .js,.json",
     "test": "jest --coverage -w=100% --passWithNoTests"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "~29.7.0"
+  },
+  "dependencies": {
+    "esbuild": "~0.25.0"
   }
 }

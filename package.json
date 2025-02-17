@@ -1,13 +1,13 @@
 {
-  "name": "parla-monorepo",
+  "name": "parla",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "eslint": "^8.0.0",
-    "prettier": "^2.0.0",
-    "turbo": "^1.8.0"
+    "eslint": "~8.0.0",
+    "prettier": "~2.0.0",
+    "turbo": "~2.4.2"
   },
   "scripts": {
     "build": "turbo run build",
@@ -16,5 +16,9 @@
     "prettier:ci": "prettier -c",
     "prettier:fix": "prettier -w \"packages/**/*.{js,jsx}\"",
     "test": "turbo run test"
+  },
+  "packageManager": "npm@10.8.1",
+  "engines": {
+    "node": ">=22"
   }
 }
